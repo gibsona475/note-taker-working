@@ -1,9 +1,9 @@
 const express = require('express');
-const PORT = process.env.PORT || 3001;
 const htmlRoutes = require("./routes/htmlRoutes");
 const apiRoutes = require("./routes/apiRoutes");
 //Initialize the app and setups a port for the same 
 const app = express();
+const PORT = process.env.PORT || 3001;
 
 //JSON parsing 
 app.use(express.json());
